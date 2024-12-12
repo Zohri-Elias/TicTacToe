@@ -58,5 +58,16 @@ public class Main {
             System.out.println("Match nul !");
             break;
         }
+        System.out.print("Rejouer ? (oui/non) : ");
+        if (scanner.nextLine().equalsIgnoreCase("oui")) {
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    tableau[i][j] = '-';
+                }
+            }
+            main(args);
+        } else {
+            System.out.println("Merci d'avoir joué !");
+        }
     }
 }
