@@ -12,7 +12,7 @@ public class Main {
 
         while (true) {
             char Jouer = 'X';
-            for (int turn = 0; turn < 9; turn++) {
+            for (int tour = 0; tour < 9; tour++) {
                 System.out.println("Plateau actuel :");
                 for (int i = 0; i < 3; i++) {
                     System.out.print("| ");
@@ -52,7 +52,7 @@ public class Main {
                     Jouer = (Jouer == 'X') ? 'O' : 'X';
                 } else {
                     System.out.println("Coup invalide, réessayez.");
-                    turn--;
+                    tour--;
                 }
             }
             System.out.println("Match nul !");
@@ -68,6 +68,7 @@ public class Main {
             main(args);
         } else {
             System.out.println("Merci d'avoir joué !");
+
         }
     }
 }
